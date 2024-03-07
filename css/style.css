@@ -69,14 +69,10 @@ h3{
 h4{
     font-size: 2rem;
     margin: 4rem;
-    font-weight:20px;
+    font-weight:2px;
     padding-left: 14px;
 }
-h5{
-    font-size: 1rem;
-    font-family: 'Inconsolata', monospace;
-font-family: 'Oswald', sans-serif;
-}
+
 a{
     color: var(--color-white);
 }
@@ -121,6 +117,9 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
+}
+p{
+    font-size: 1rem;
 }
 .nav_container{
     height: 100%;
@@ -171,7 +170,7 @@ header{
     /* top:5rem;      */
     /* overflow:hidden; */
     height:70vh;
-    margin-bottom: 25rem;
+    margin-bottom: 40rem;
 }
 .header_container{
     display:grid;
@@ -250,7 +249,7 @@ gap:5rem;
     margin:2rem 0 1.5rem;
 }
 .category p{
-    font-size:0.8rem;
+    font-size:1rem;
     font-family: 'Oswald', sans-serif;
 }
 .category:nth-child(2) .category_icon{
