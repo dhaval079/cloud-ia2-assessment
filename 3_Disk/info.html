@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        .roundrobin{
+    border: 2px solid var(--color-bg2);
+    box-shadow: inset 0rem 0rem 6rem rgba(44, 44, 44, 0.901);
+    border-radius: 2rem;
+    width:70% ;
+    margin-bottom: 17rem;
+    padding: 3rem;
+}
+.container{
+    margin: 5rem;
+}
+.introduction{
+    margin: 1rem 5rem 2rem;
+}
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+    outline:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf86;
+    --color-danger:#f75842;
+    --color-warning:#f7c94b;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --conatiner-width-lg:80%;
+    --conatiner-width-md:90%;
+    --conatiner-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.7;
+    color:var(--color-white);
+    background-color:#000000;
+    zoom: 0.8;
+}
+
+.container{
+    widht:var(--conatiner-width-lg);
+    margin:0 auto;
+}
+    </style>
+</head>
+<body>
+    <section class="container roundrobin">
+        <h2>Disk Scheduling Algorithm</h2>
+        <br>
+        <div class="diskscheduling_container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF9kV8ngd0i72uAFise2bsBUFF7NPhzBFPpvbucdBkPoh9kLv2bUshOYfDgmjE-lj1ur8&usqp=CAU" id="img">
+            <div class="introduction"> 
+                <h3>Introduction:</h3>
+                <br>
+                <p>
+                    Disk Scheduling Algorithms are methods used to order or prioritize the access of data on a disk drive. These algorithms aim to minimize the seek time (time taken to position the disk arm to the desired track) and optimize the overall performance of disk operations.
+                </p>
+            </div>
+            <br>
+            <div class="char">
+                <h3>Characteristics of Disk Scheduling Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>Minimization of seek time is a primary objective.</li>
+                    <li>Efficiently manages disk I/O requests.</li>
+                    <li>Various algorithms like FCFS, SSTF, SCAN, C-SCAN, LOOK, and C-LOOK are used.</li>
+                    <li>Adaptability to different workloads and system configurations.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="adv">
+                <h3>Advantages of Disk Scheduling Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>Improved disk access time.</li>
+                    <li>Optimized disk performance.</li>
+                    <li>Effective utilization of disk resources.</li>
+                    <li>Compatibility with different disk systems.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="disadv">
+                <h3>Disadvantages of Disk Scheduling Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>May lead to starvation for certain I/O requests in some algorithms.</li>
+                    <li>Increased complexity in managing disk operations.</li>
+                    <li>Difficulty in predicting optimal scheduling for dynamic workloads.</li>
+                    <li>Overhead in implementing and maintaining scheduling algorithms.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

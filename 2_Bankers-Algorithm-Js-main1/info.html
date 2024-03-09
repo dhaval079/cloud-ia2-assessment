@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        .roundrobin{
+    border: 2px solid var(--color-bg2);
+    box-shadow: inset 0rem 0rem 6rem rgba(44, 44, 44, 0.901);
+    border-radius: 2rem;
+    width:70% ;
+    margin-bottom: 17rem;
+    padding: 3rem;
+}
+.container{
+    margin: 5rem;
+}
+.introduction{
+    margin: 1rem 5rem 2rem;
+}
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+    outline:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf86;
+    --color-danger:#f75842;
+    --color-warning:#f7c94b;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --conatiner-width-lg:80%;
+    --conatiner-width-md:90%;
+    --conatiner-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.7;
+    color:var(--color-white);
+    background-color:#000000;
+    zoom: 0.8;
+}
+
+.container{
+    widht:var(--conatiner-width-lg);
+    margin:0 auto;
+}
+    </style>
+</head>
+<body>
+    <section class="container roundrobin">
+        <h2>Banker's Deadlock Algorithm</h2>
+        <br>
+        <div class="roundrobin_conatainer">
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2016/01/safety.png" id="img">
+            <div class="introduction"> 
+                <h3>Introduction :</h3>
+                <br>
+                <p>Introduction:
+
+                    The Banker's Algorithm is a resource allocation and deadlock avoidance algorithm used in operating systems. It ensures that processes' resource requests do not result in deadlock by dynamically examining the available resources and the future needs of the processes.
+             </p>
+                </div>
+                <br>
+                <div class="char">
+                    <h3>Characteristics of Banker's Algorithm :</h3>
+                    <br>
+                    <ul>
+                        <li>It ensures safety by preventing deadlock.</li>
+                        <li>Resource allocation is done dynamically.</li>
+                        <li>It is a deadlock avoidance algorithm.</li>
+                        <li>It dynamically examines available resources and future needs of processes.</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="adv">
+                    <h3>Advantages of Banker's Algorithm :</h3>
+                    <br>
+                    <ul>
+                        <li>Deadlock prevention.</li>
+                        <li>Efficient resource allocation.</li>
+                        <li>Flexibility in resource management.</li>
+                        <li>Safety guarantee for system operations.</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="disadv">
+                    <h3>Disadvantages of Banker's Algorithm :</h3>
+                    <br>
+                    <ul>
+                        <li>Resource overhead for maintaining information.</li>
+                        <li>Complexity in implementation.</li>
+                        <li>Limited scalability as processes and resources increase.</li>
+                        <li>Potential underutilization of resources.</li>
+                    </ul>
+                </div>
+                
+        </div>
+    </section>
+    
+</body>
+</html>

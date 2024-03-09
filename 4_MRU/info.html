@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        .mru {
+            border: 2px solid var(--color-bg2);
+            box-shadow: inset 0rem 0rem 6rem rgba(44, 44, 44, 0.901);
+            border-radius: 2rem;
+            width: 70%;
+            margin-top: 10rem;
+            margin-bottom: 17rem;
+            padding: 3rem;
+        }
+        
+        .container {
+            margin: 5rem;
+        }
+        
+        .introduction {
+            margin: 1rem 5rem 2rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        :root {
+            --color-primary: #6c63ff;
+            --color-success: #00bf86;
+            --color-danger: #f75842;
+            --color-warning: #f7c94b;
+            --color-danger-variant: rgba(247, 88, 66, 0.4);
+            --color-white: #fff;
+            --color-light: rgba(255, 255, 255, 0.7);
+            --color-black: #000;
+            --color-bg: #1f2641;
+            --color-bg1: #2e3267;
+            --color-bg2: #424890;
+            --conatiner-width-lg: 80%;
+            --conatiner-width-md: 90%;
+            --conatiner-width-sm: 94%;
+            --transition: all 400ms ease;
+        }
+        
+        body {
+            font-family: 'Archivo', sans-serif;
+            line-height: 1.7;
+            color: var(--color-white);
+            background-color: #000000;
+            zoom: 0.8;
+        }
+        .mru_container{
+            margin: 3rem;
+        }
+        .container {
+            justify-content: center;
+            align-items: center;
+             width: 80rem;            
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="container mru">
+        <h2>Most Recently Used (MRU) Algorithm</h2>
+        <br>
+        <div class="mru_container">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230519223827/finL.png" id="img">
+            <div class="introduction"> 
+                <h3>Introduction:</h3>
+                <br>
+                <p>
+                    The Most Recently Used (MRU) Algorithm is a page replacement algorithm used in operating systems to manage memory. It replaces the most recently used page when a new page needs to be brought into memory and the memory is full. MRU prioritizes retaining the pages that have been accessed most recently.
+                </p>
+            </div>
+            <br>
+            <div class="char">
+                <h3>Characteristics of Most Recently Used (MRU) Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>Replaces the most recently used page in memory.</li>
+                    <li>Does not consider the frequency of page accesses, only the most recent access.</li>
+                    <li>Suitable for scenarios where recent data is more likely to be accessed again.</li>
+                    <li>Simple and straightforward implementation.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="adv">
+                <h3>Advantages of Most Recently Used (MRU) Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>Efficient for scenarios where recently accessed pages are likely to be accessed again soon.</li>
+                    <li>Minimal overhead in implementation.</li>
+                    <li>Straightforward logic and easy to understand.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="disadv">
+                <h3>Disadvantages of Most Recently Used (MRU) Algorithm:</h3>
+                <br>
+                <ul>
+                    <li>May lead to poor performance in scenarios where recent accesses are not indicative of future accesses.</li>
+                    <li>Does not consider the frequency of page accesses, which may result in inefficient memory usage.</li>
+                    <li>Not suitable for all types of workload patterns.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
