@@ -37,6 +37,21 @@ body{
     background-color:#000000;
     zoom: 0.8;
 }
+/* Define cursor animation */
+/* Define cursor animation */
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Apply cursor animation to h1 element */
+.auto-type::after {
+    content: '|'; /* Cursor symbol */
+    animation: blink 0.5s infinite; /* Blinking animation */
+    display: inline-block; /* Ensure cursor appears after text */
+    font-size: 1.2em; /* Adjust font size to create a thicker cursor */
+}
 
 .container{
     widht:var(--conatiner-width-lg);
@@ -54,7 +69,7 @@ h2,h3,h4,h5{
 }
 h1{
     font-size: 4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto mono", sans-serif;
   font-weight: 100;
   font-style: normal;
  

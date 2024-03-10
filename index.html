@@ -51,28 +51,31 @@
     
     <header>
         <div class="another roboto-thin" id="main">
+          <h1>Discover Fundamental Concepts</h1>           
             <h1>Algorithm Forge</h1>
             <br>
-            <h2>Building and Crafting Interactive Algorithms</h2>
+            <a href="#hello" class="btn btn-primary">Get-Started</a>
         </div>
         
         <div class="container header_container">
             
             <div class="header_left">
                 <h1 class="auto-type"></h1>
-                <h1>Algorithm
-                </h1>
+                
                 <p>Welcome to our website, where we strive to empower learners of all ages to unlock their full potential. Our mission is to provide innovative and engaging learning opportunities that inspire and motivate students to achieve their goals. Whether you're a student, educator, or lifelong learner, we have something for you.</p>
                 <br>
-                <a href="#hello" class="btn btn-primary">Get-Started</a>
-               <script>
-                var typed=new Typed(".auto-type",{
-                    strings:["Round Robin","Banker's","Disk scheduling","Most recently used (MRU)"],
-                    typeSpeed:80,
-                    backSpeed:70,
-                    loop:true
-                })
-                </script>
+                
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                      var typed = new Typed(".auto-type", {
+                          strings: ["Round Robin Algorithm", "Banker's Algorithm", "Disk scheduling Algorithm", "Most recently used (MRU) Algorithm"],
+                          typeSpeed: 40,
+                          backSpeed: 50,
+                          loop: true
+                      });
+                  });
+                  </script>
+                  
             </div>
 
             <div class="header_right">
