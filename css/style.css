@@ -60,6 +60,58 @@ body{
 section{
     padding:6em 0;
 }
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+    /* Styles for medium-sized screens */
+    .nav_container {
+      width: 80rem; /* Adjust width as needed */
+      margin: auto; /* Center content */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header{
+        width: 100rem; /* Adjust width as needed */
+        margin: auto; /* Center content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .courses{
+        width: 100rem; /* Adjust width as needed */
+        margin: auto; /* Center content */
+        justify-content: center;
+        align-items: center;
+        height: 100rem;
+        text-align: center;
+      }
+      section{
+        width: 100rem; /* Adjust width as needed */
+        margin: auto; /* Center content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .testimonials_container{
+        width: 100rem; /* Adjust width as needed */
+        margin: auto; /* Center content */
+        justify-content: center;
+        align-items: center;
+        height: 40rem;
+        text-align: center;
+      }
+      .footer{
+        width: 100rem; /* Adjust width as needed */
+        margin: auto; /* Center content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  }
+  
+.image{
+    width: 5.3rem;
+    height: 6rem;
+}
 section h2{
     text-align: center;
     margin-bottom: 4rem;
