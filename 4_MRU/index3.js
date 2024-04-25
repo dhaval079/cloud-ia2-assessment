@@ -33,6 +33,6 @@ newnote4.save();
 res.redirect("/");
 });
 
-app.listen(5506,function(){
+app.listen(5001,function(){
     console.log("Server Connected Successfully");
 });

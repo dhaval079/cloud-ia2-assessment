@@ -10,7 +10,6 @@ app.use(express.static(__dirname+ ""));
 
 //? if you want to store the database in cloud then use this:
 mongoose.connect("mongodb+srv://dhaval079:msZuTSg16fhJn5lG@cluster0.rm7on6v.mongodb.net/practice" , {useNewUrlParser:true},{useUnifiedTopoplogy:true});
-
 //? or if you want to store the database in your localhost that is your computer itself then use this:
 // mongoose.connect("mongodb://127.0.0.1:27017/userdb" , {useNewUrlParser:true},{useUnifiedTopoplogy:true});
 
